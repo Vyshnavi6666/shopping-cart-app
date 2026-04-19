@@ -1,0 +1,71 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Center forms */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form styling */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+input, button {
+  padding: 10px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Grid for products */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product card */
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Cart items */
+#cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
